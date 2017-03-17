@@ -5,7 +5,7 @@
             "name": "elk",
             "image": "sebp/elk",
             "essential": true,
-            "memory": 512,
+            "memory": 3072,
             "portMappings": [
                 {
                     "hostPort": 5601,
