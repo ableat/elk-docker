@@ -5,7 +5,7 @@
             "ContainerPort": "80"
         },
         {
-            "ContainerPort": "5601"
+            "ContainerPort": "5044"
         }
     ]
 }
