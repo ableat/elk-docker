@@ -1,11 +1,25 @@
 {
     "AWSEBDockerrunVersion": "2",
-    "Ports": [
+    "containerDefinitions": [
         {
-            "ContainerPort": "80"
-        },
-        {
-            "ContainerPort": "5044"
+            "name": "elk",
+            "image": "sebp/elk",
+            "essential": true,
+            "memory": 2048,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "containerPort": 80
+                },
+                {
+                    "hostPort": 5044,
+                    "containerPort": 5044
+                },
+                {
+                    "hostPort": 5601,
+                    "containerPort": 5601
+                }
+            ]
         }
     ]
 }
